@@ -1,0 +1,11 @@
+.inputbox input:focus ~label
+,.inputbox input:not(:valid) ~ label
+{
+    transform: translate(2px,-20px);
+    transition: 1.0s;
+    color:#4ade80;
+    font-size: medium;
+    background-color: black;
+    padding-left: 2px;
+    padding-right: 2px;
+}
