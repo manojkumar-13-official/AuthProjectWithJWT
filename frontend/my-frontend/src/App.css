@@ -1,11 +1,40 @@
-.inputbox input:focus ~label
-,.inputbox input:not(:valid) ~ label
+.inputbox input:not(:placeholder-shown)
 {
-    transform: translate(2px,-20px);
+    border-color: #4ade80 !important;
+    transition: 0.3s;
+}
+
+.inputbox input:not(:placeholder-shown) ~ label,
+.inputbox input:focus ~ label,
+.inputbox input:invalid ~ label
+{
+    transform: translateY(-20px);
     transition: 1.0s;
-    color:#4ade80;
+    color: #4ade80;
+    font-size: medium;
+    background-color: black;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+.inputbox input:-webkit-autofill,
+.inputbox input:-webkit-autofill:hover,
+.inputbox input:-webkit-autofill:focus,
+.inputbox input:-webkit-autofill:active
+{
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.inputbox input:-webkit-autofill ~ label
+{
+    transform: translateY(-20px);
+    transition: 1.0s;
+    color: #4ade80;
     font-size: medium;
     background-color: black;
     padding-left: 2px;
     padding-right: 2px;
 }
+
