@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { API_ENDPOINTS } from '../config/api'
 
 const Register = () => {
   const navigate = useNavigate()
@@ -25,7 +26,7 @@ const Register = () => {
     setError('')
 
     try {
-      const response = await fetch('http://localhost:8080/register', {
+      const response = await fetch(API_ENDPOINTS.REGISTER, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
