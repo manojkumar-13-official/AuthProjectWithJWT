@@ -1,0 +1,14 @@
+The complete overview of this learning of Spring Security:
+
+1. CSRF
+    In this concept we have the capability to manage the authorization phase to restrict
+    based on the session handling , maintain the session stateless and same site strict.
+
+2. Bcrypt
+    This the method which helps to store the users password in cyber script with the help
+    of its interface , class and methods.
+    Also AuthenticationProvider(DaoAuthenticationProvider) is helps to handle the authentication.
+
+3. JWT (JSON Web Token)
+    AuthenticationManager is helps to handle the verification process with users stored
+    in the database with the current request.
